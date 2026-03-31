@@ -1,13 +1,13 @@
-# ☕ Coffee Shop Sales Analysis (Team 16)
+# Coffee Shop Sales Analysis (Team 16)
 
-## 📌 Overview
+## Overview
 This project analyzes coffee shop transaction data to uncover patterns in revenue, customer behavior, and store performance. The analysis was conducted using Python (Pandas, Matplotlib) as part of a Data Challenge assignment.
 
 The goal is to answer key business questions and provide actionable insights through data cleaning, analysis, and visualization.
 
 ---
 
-## 📂 Dataset
+## Dataset
 **File:** `team16_coffeeshop.csv`
 
 The dataset contains transactional records including:
@@ -21,7 +21,7 @@ The dataset contains transactional records including:
 
 ---
 
-## 🎯 Objectives
+## Objectives
 This project answers the following questions:
 
 1. Which time of day generates the most revenue?
@@ -31,7 +31,7 @@ This project answers the following questions:
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 - Python
 - Pandas (data manipulation)
 - Matplotlib (visualization)
@@ -39,7 +39,7 @@ This project answers the following questions:
 
 ---
 
-## 🔄 Project Workflow
+## Project Workflow
 
 ### 1. Data Loading
 The dataset is loaded into a Pandas DataFrame for analysis.
@@ -69,7 +69,7 @@ Created bar charts to visually represent:
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 - **Morning generates the highest revenue**, making it the busiest and most profitable time period.
 - **Tea and Coffee have the highest average transaction values**, indicating strong revenue contribution from beverages.
@@ -78,7 +78,7 @@ Created bar charts to visually represent:
 
 ---
 
-## 🧠 Insights & Business Impact
+## Insights & Business Impact
 
 - Focus staffing and promotions during **morning peak hours**
 - Prioritize high-value categories like **coffee and tea**
