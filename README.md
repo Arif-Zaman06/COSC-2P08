@@ -8,16 +8,16 @@ The goal is to answer key business questions and provide actionable insights thr
 ---
 
 ## Dataset
-**File:** `team16_coffeeshop.csv`
+File: `team16_coffeeshop.csv`
 
 The dataset contains transactional records including:
-- `time_of_day` – Morning, Afternoon, Evening
-- `item_category` – Coffee, Tea, Pastry, Sandwich, etc.
-- `size` – Small, Medium, Large
-- `price` – Transaction value
-- `payment_type` – Cash, Card, Mobile
-- `loyalty_member` – TRUE/FALSE
-- `location` – Store A, Store B, Store C
+- time_of_day – Morning, Afternoon, Evening
+- item_category – Coffee, Tea, Pastry, Sandwich, etc.
+- size – Small, Medium, Large
+- price – Transaction value
+- payment_type – Cash, Card, Mobile
+- loyalty_member – TRUE/FALSE
+- location – Store A, Store B, Store C
 
 ---
 
@@ -45,24 +45,25 @@ This project answers the following questions:
 The dataset is loaded into a Pandas DataFrame for analysis.
 
 ### 2. Data Exploration
-- Checked structure (`df.info()`)
-- Reviewed summary statistics (`df.describe()`)
+- Checked structure (df.info())
+- Reviewed summary statistics (df.describe())
 - Identified missing values
 
 ### 3. Data Cleaning
-- Converted `price` to numeric format
-- Standardized `loyalty_member` values (True/False)
-- Filled missing values using mean
+- Converted price to numeric format to ensure accurate calculations
+- Standardized loyalty_member values (TRUE/FALSE) into consistent boolean format
+- Filled missing values in price using the mean to maintain dataset completeness
+- Verified that no invalid or unrealistic values (such as negative prices) were present
 
 ### 4. Data Analysis
-Used `groupby()` operations to compute:
+Used groupby operations to compute:
 - Total revenue by time of day
 - Average transaction value by category
 - Average spending by loyalty membership
 - Total sales by location
 
 ### 5. Visualization
-Created bar charts to visually represent:
+Created bar charts to represent:
 - Revenue trends
 - Category performance
 - Store comparisons
@@ -71,17 +72,17 @@ Created bar charts to visually represent:
 
 ## Key Findings
 
-- **Morning generates the highest revenue**, making it the busiest and most profitable time period.
-- **Tea and Coffee have the highest average transaction values**, indicating strong revenue contribution from beverages.
-- **Loyalty members spend slightly more on average**, suggesting a modest positive impact of the loyalty program.
-- **Store A has the highest total sales**, although performance across all stores is relatively similar.
+- Morning generates the highest revenue at 2298.87, making it the busiest and most profitable time period.
+- Tea and coffee have the highest average transaction values (3.47 and 3.43), indicating strong revenue contribution from beverages.
+- Loyalty members spend slightly more on average (3.36) than non-members (3.32), showing a small positive impact of the loyalty program.
+- Store A has the highest total sales at 1602.73, although performance across all stores is relatively similar.
 
 ---
 
 ## Insights & Business Impact
 
-- Focus staffing and promotions during **morning peak hours**
-- Prioritize high-value categories like **coffee and tea**
+- Focus staffing and promotions during morning peak hours
+- Prioritize high-value categories such as coffee and tea
 - Improve loyalty programs to further increase customer spending
 - Monitor store performance to identify optimization opportunities
 
@@ -90,5 +91,28 @@ Created bar charts to visually represent:
 ## How to Run the Project
 
 1. Clone this repository:
-   ```bash
    git clone https://github.com/your-username/coffee-shop-analysis.git
+
+2. Open the project in Jupyter Notebook or Google Colab
+
+3. Upload the dataset (team16_coffeeshop.csv)
+
+4. Run all cells to reproduce the analysis and visualizations
+
+---
+
+## Repository Structure
+
+coffee-shop-analysis/
+│
+├── Data Challenge.ipynb   # Main notebook
+├── team16_coffeeshop.csv # Dataset
+├── README.md             # Documentation
+
+---
+
+## Conclusion
+
+This project analyzed coffee shop sales data to identify key revenue patterns and customer behaviors. The results show that morning hours drive the highest revenue, beverage categories contribute the most value, and loyalty programs have a small positive impact on spending.
+
+Overall, these insights can support better operational decisions, improve marketing strategies, and enhance customer engagement.
